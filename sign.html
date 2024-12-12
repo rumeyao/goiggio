@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/wp.css">
+    <script src="https://kit.fontawesome.com/2c18e68f66.js"></script>
+</head>
+<body>
+    <body>
+        <header class="header">
+            <a href="#" class="header-logo">
+                <img src="./images/logo.jpg" 
+                alt="polyot logo" 
+                class="header-logo-image"
+                width="150" height="45" loading="lazy">
+            </a>
+            <div class="header-actions">
+                <select class="js-choice">
+                    <option>Москва</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Иркутск</option>
+                    <option>Хабаровск</option>
+                    <option>Чита</option>
+                </select>
+                <select class="js-choice">
+                    <option>RUB</option>
+                    <option>USD</option>
+                    <option>YEN</option>
+                </select>
+                <div class="navbar">
+                <a href="index.html" class="href">Главная</a>
+                <a href="#" class="href">О нас</a>
+                <a href="#" class="href">Контакты</a>
+                <a href="sign.html" class="href">Регистрация</a>    
+                </div>
+            </div>
+            
+        </header>
+        <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+        <script src="./js/main.js"></script>
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-item">
+                    <a href="str.html" class="header-menu-link">Туры</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Отели</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="str.html" class="header-menu-link">Программы</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Акции</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Горящие предложения</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">О визах</a>
+                </li>
+            </ul>
+    </nav>
+    <section class="wrapper-s">
+        <div class="form signup">
+            <header>Регистрация</header>
+            <form action="#">
+                <input type="text" placeholder="Логин"required/>
+                <input type="text" placeholder="E-mail"required/>
+                <input type="text" placeholder="Пароль"required/>
+                <div class="checkbox">
+                <input type="checkbox" id = "signupChek"/>
+                <label for = "signupChek">Я все понимаю и принимаю</label>
+                </div>
+                <input type="submit" value="Зарегистрироваться"/>
+            </form>
+        </div>
+
+        <div class="form login">
+            <header>Вход</header>
+            <form action="#">
+                <input type="text" placeholder="E-mail"required/>
+                <input type="text" placeholder="Пароль"required/>
+                <a href="#">Забыли пароль?</a>
+                <input type="submit" value="Войти"/>
+            </form>
+        </div>
+
+
+        
+<script>
+    const wrapper = document.querySelector (".wrapper-s"),
+    signupHeader = document.querySelector (".signup header"),
+    loginHeader = document.querySelector (".login header");
+
+    loginHeader.addEventListener("click", () => {
+        wrapper.classList.add("active");
+    })
+    signupHeader.addEventListener("click", () => {
+        wrapper.classList.remove("active");
+    })
+</script>
+</section>
+
+<footer>
+    <div class="row">
+        <div class="col">
+            <p class="foot">Путешествия</p>
+            <p class="fot">Туры</p>
+            <p class="fot">Отели</p>
+            <p class="fot">Круизы</p>
+            <p class="fot">Авиабилеты</p>
+        </div>
+        <div class="col">
+            <p class="foot">Перед поездкой</p>
+            <p class="fot">Виза</p>
+            <p class="fot">Страхование</p>
+            <p class="fot">Памятка туриста</p>
+            <p class="fot">Доплаты</p>
+        </div>
+        <div class="col">
+            <p class="foot">Покупка и оплата</p>
+            <p class="fot">Помощь и информация</p>
+            <p class="fot">Как оплатить тур</p>
+            <p class="fot">Документы</p>
+            <p class="fot">Изменить или аннулировать тур</p>
+            <p class="fot">Правила переносов денежных средств</p>
+            <p class="fot">Специальные предложения</p>
+        </div>
+        <div class="col">
+            <p class="foot">Подпишитесь на нашу рассылку!</p>
+            <form class="formik">
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                <input class="formik-input" type="email" placeholder="Введите почту" required>
+                <button class="formik-button"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+            </form>
+            <div class="social-icons">
+                <i class="fa-brands fa-vk" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Все права защищены. 2024.</p>
+</footer>
+
+</body>
+</html>

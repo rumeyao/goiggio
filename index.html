@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyot</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/wp.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/2c18e68f66.js"></script>
+</head>
+<script>document.getElementById('davaToday').valueAsDate = new Date();</script>
+<body>
+    <header class="header">
+        <a href="#" class="header-logo">
+            <img src="./images/logo.jpg" 
+            alt="polyot logo" 
+            class="header-logo-image"
+            width="150" height="45" loading="lazy">
+        </a>
+        <div class="header-actions">
+            <select class="js-choice">
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+                <option>Иркутск</option>
+                <option>Хабаровск</option>
+                <option>Чита</option>
+            </select>
+            <select class="js-choice">
+                <option>RUB</option>
+                <option>USD</option>
+                <option>YEN</option>
+            </select>
+            <div class="navbar">
+            <a href="index.html" class="href">Главная</a>
+            <a href="#" class="href">О нас</a>
+            <a href="#" class="href">Контакты</a>
+            <a href="sign.html" class="href">Регистрация</a>    
+            </div>
+        </div>
+    </header>
+    <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-item">
+                    <a href="str.html" class="header-menu-link">Туры</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Отели</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="str.html" class="header-menu-link">Программы</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Акции</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">Горящие предложения</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link">О визах</a>
+                </li>
+            </ul>
+    </nav>
+    <div class="container">
+    <div class="rounded-square">
+        <select class="js-choice">
+            <option>Откуда</option>
+            <option>Москва</option>
+            <option>Санкт-Петербург</option>
+            <option>Иркутск</option>
+            <option>Хабаровск</option>
+        </select>
+        <select class="js-choice">
+            <option>Куда</option>
+            <option>Москва</option>
+            <option>Санкт-Петербург</option>
+            <option>Иркутск</option>
+            <option>Хабаровск</option>
+            <option>Чита</option>
+        </select>
+        <input type="date" name="Date" class="choices" id="davaToday">
+        <input type="date" name="Date" id="davaToday">
+        <select class="js-choice">
+            <option>Туристы</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+        </select>
+        <button type="button" class="button">Найти</button>
+        <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+        <script src="./js/main.js"></script>
+    </div>
+    </div>
+<main class="content">
+    <h1>ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</h1>
+        <div class="container-card">
+            <div class="wrapper">
+                <div class="card">
+                    <img class="'card-img" src="./images/first 1.jpg">
+                    <div class="card-title">ЛЮБИМЫЙ В ТУРЦИЮ</div>
+                    <div class= "card-sub">Слово «Турция» для русских туристов уже давно приобрело свою особенную эмоциональную окраску...</div>
+                    <div class="btn-keeper">
+                        <a class="btn" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="card">
+                    <img class="'card-img" src="./images/first 2.jpg">
+                    <div class="card-title">ТУР В ДАЛЯНЬ</div>
+                    <div class= "card-sub">Далянь — крупный курорт, который подходит для отдыха с детьми. Он находится в северной части Китая, поэто...</div>
+                    <div class="btn-keeper">
+                        <a class="btn" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="card">
+                    <img class="'card-img" src="./images/first 3.jpg">
+                    <div class="card-title">ЕДЕМ В ШРИ-ЛАНКУ</div>
+                    <div class= "card-sub">Тур на Шри-Ланку можно приобрести по доступным ценам, и удобен он сочетанием экскурсионно...</div>
+                    <div class="btn-keeper">
+                        <a class="btn" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <h2>КОНЦЕПЦИИ ОТДЫХА</h2>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card-2 swiper-slide">
+                    <img class="card-img-2" src="./images/second 1.jpg">
+                    <div class="card-title">FLY Priority</div>
+                    <div class= "card-sub">FLY Priority – эксперт в области первоклассного туризма. Нас объединяет опыт, высокие амбиции в достижении целей и желание перфекционизма во всём.</div>
+                </div>
+                <div class="card-2 swiper-slide">
+                    <img class="card-img-2" src="./images/экотуризм.jpg">
+                    <div class="card-title">Экологический туризм</div>
+                    <div class= "card-sub">Путешествия, сосредотачивающиеся на взаимодействии с природой и сохранении экосистем. Программы могут включать походы в национальные парки.</div>
+                </div>
+                <div class="card-2 swiper-slide">
+                    <img class="card-img-2" src="./images/культурный.jpg">
+                    <div class="card-title"> Культурные путешествия</div>
+                    <div class= "card-sub">Погружение в культуру и традиции различных стран. Туристы могут участвовать в местных праздниках, кулинарных мастер-классах и экскурсиях по историческим местам.</div>
+                </div>
+                <div class="card-2 swiper-slide">
+                    <img class="card-img-2" src="./images/активный.jpg">
+                    <div class="card-title">Активный отдых</div>
+                    <div class= "card-sub">Для любителей физической активности и приключений. Программы могут включать горные восхождения, водные виды спорта, велопоездки и другие активные мероприятия.</div>
+                </div>
+                <div class="card-2 swiper-slide">
+                    <img class="card-img-2" src="./images/семейный.jpg">
+                    <div class="card-title">Семейный отдых</div>
+                    <div class= "card-sub">Пакеты для семей с детьми, включая развлекательные программы, тематические парки и детские клубы. Удобное размещение и мероприятия для всех возрастов</div>
+                </div>
+                <div class="card-2 swiper-slide">
+                    <img class="card-img-2" src="./images/интересам.jpg">
+                    <div class="card-title">Путешествия по интересам</div>
+                    <div class= "card-sub">Тематические туры для людей с особыми увлечениями — от гастрономии до истории или искусства. Это могут быть мастер-классы, специализированные экскурсии и встречи с экспертами.</div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="flex-container">
+        <h2>ВЫБЕРИ СВОЙ ОТПУСК</h2>
+        <a class="aclass" href="str.html">Все предложения</a>
+        </div>
+    <div class="container-card">
+        <div class="wrapper">
+            <div class="card-3">
+                <img class="card-img-3" src="./images/токио.jpg">
+                <div class="lin">
+                    <div class="card-title">Токио от 268 792</div>
+                    <button class="button-therd"><i class="fa-solid fa-arrow-right" style="color: #ff772e;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="card-3">
+                <img class="card-img-3" src="./images/иото.jpg">
+                <div class="lin">
+                <div class="card-title">Киото от 189 785</div>
+                <button class="button-therd"><i class="fa-solid fa-arrow-right" style="color: #ff772e;"></i></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-card">
+        <div class="wrapper">
+            <div class="card-3">
+                <img class="card-img-3" src="./images/first 1.jpg">
+                <div class="lin">
+                    <div class="card-title">Анталья от 68 999</div>
+                    <button class="button-therd"><i class="fa-solid fa-arrow-right" style="color: #ff772e;"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="card-3">
+                <img class="card-img-3" src="./images/first 2.jpg">
+                <div class="lin">
+                <div class="card-title">Бодрум от 128 799</div>
+                <button class="button-therd"><i class="fa-solid fa-arrow-right" style="color: #ff772e;"></i></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <h2>НАША ПРОДУКЦИЯ</h2>
+<div class="lin-2">
+    <img class = "shop" src="./images/сертификат.png">
+    <img class = "shop" src="./images/блокнот.png">
+    <img class = "shop" src="./images/кружка.png">
+</div>
+<div class="lin"><a class="button-2" href="#">ПЕРЕЙТИ В МАГАЗИН</a></div>
+<h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+<div class="container-card">
+    <div class="wrapper">
+        <div class="card-4">
+                <div class="card-title-otz">Ольга</div>
+                <div class="card-title-otz-o">★★★★</div>
+                <div class= "card-title-otz-o">Поиск по сайту для отдыха хорошо, но отель не всегда выполняет обязательства относительно заявленных фото/ номер в реальности. В том числе не актуальная информация для связи с отелем в ваучере....</div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card-5">
+                <div class="card-title-otz">Виктор</div>
+                <div class="card-title-otz-o">★★★★★</div>
+                <div class= "card-title-otz-o">Да, все в целом четко, в рамках оплаченных услуг, в целом проблем с отдыхом не было, документы пришли заранее. Само путешествие прошло без неожиданностей, хорошо. Спасибо. Поэтому отдельно каких-то замечаний нет. Возможно, более подробно сообщать о услугах авиакомпаний, что входит, что нет, вариантах трансфера от аэропорта. Также, с учетом того, что трансфер не брал от...</div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card-6">
+                <div class="card-title-otz">Татьяна</div>
+                <div class="card-title-otz-o">★★★★★</div>
+                <div class= "card-title-otz-o">Оперативно решаются проблемы по уже оформленному и оплаченному туру. Очень быстро корректируются пожелания клиента. Пользуюсь этим турагенством не первый раз. Высший класс!!!!</div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col">
+            <p class="foot">Путешествия</p>
+            <p class="fot">Туры</p>
+            <p class="fot">Отели</p>
+            <p class="fot">Круизы</p>
+            <p class="fot">Авиабилеты</p>
+        </div>
+        <div class="col">
+            <p class="foot">Перед поездкой</p>
+            <p class="fot">Виза</p>
+            <p class="fot">Страхование</p>
+            <p class="fot">Памятка туриста</p>
+            <p class="fot">Доплаты</p>
+        </div>
+        <div class="col">
+            <p class="foot">Покупка и оплата</p>
+            <p class="fot">Помощь и информация</p>
+            <p class="fot">Как оплатить тур</p>
+            <p class="fot">Документы</p>
+            <p class="fot">Изменить или аннулировать тур</p>
+            <p class="fot">Правила переносов денежных средств</p>
+            <p class="fot">Специальные предложения</p>
+        </div>
+        <div class="col">
+            <p class="foot">Подпишитесь на нашу рассылку!</p>
+            <form class="formik">
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                <input class="formik-input" type="email" placeholder="Введите почту" required>
+                <button class="formik-button"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+            </form>
+            <div class="social-icons">
+                <i class="fa-brands fa-vk" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Все права защищены. 2024.</p>
+</footer>
+</main>
+    </body>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</html>
